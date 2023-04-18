@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Zaproszenie</title>
+<style type="text/css">
+
+body,input
+    {
+    font-family:"Trebuchet ms",arial;font-size:0.9em;
+    color:#333;
+    }
+.spoiler
+    {
+    border:1px solid #ddd;
+    padding:3px;
+    }
+.spoiler .inner
+    {
+    border:1px solid #eee;
+    padding:3px;margin:3px;
+    }
+    </style>
+    <script type="text/javascript">
+function showSpoiler(obj)
+    {
+    var inner = obj.parentNode.getElementsByTagName("div")[0];
+    if (inner.style.display == "none")
+        inner.style.display = "";
+    else
+        inner.style.display = "none";
+    }
+    </script>
+	<img src="pytajnik.png">
+	<div class="spoiler">
+    <input type="button" onclick="showSpoiler(this);" value="Otwórz kopertê" />
+    <div class="inner" style="display:none;">
+<br><FONT SIZE="6"><FONT COLOR="RED"><center><I>ZAPROSZENIE</I> </FONT SIZE="6"></FONT COLOR="RED">
+<br><FONT SIZE="5"> Serdecznie zapraszam 
+<br>na Wystawê psów rasowych
+<br>Gliwice ulica Nowa 13/8 
+<br> 3 lutego 2017 r. 9:25 </FONT SIZE="5"></center>
+</div>
+</div>
